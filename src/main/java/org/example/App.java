@@ -16,10 +16,10 @@ public class App
         System.out.print("What is the amount? ");
         double subtotal = scan.nextDouble();
 
-        Scanner newscan = new Scanner(System.in);
+        Scanner newScan = new Scanner(System.in);
 
         System.out.print("What is the state? ");
-        String state = newscan.nextLine();
+        String state = newScan.nextLine();
 
         double tax = 0.0;
         double total = 0.0;
@@ -31,9 +31,10 @@ public class App
             System.out.println("The subtotal is $" + String.format("%.2f", subtotal));
             System.out.println("The tax is $" + tax);
             System.out.println("The total is $" + total);
-        }else{
-            System.out.println("The total is $" + String.format("%.2f", subtotal));
+
+            System.exit(0);
         }
 
+        System.out.println("The total is $" + String.format("%.2f", subtotal));
     }
 }
